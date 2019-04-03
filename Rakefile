@@ -9,6 +9,5 @@ task :console do
   require_all "./lib" if Dir.exists?("./lib")
   require_all "./*.rb" if Dir.entries(".").include?(/\.rb/)
 
-  puts "Yooooo"
   Pry.start
 end
